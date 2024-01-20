@@ -4,6 +4,7 @@ from io import BytesIO
 from PIL import Image
 import tensorflow as tf
 import numpy as np
+import os
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
@@ -15,7 +16,7 @@ app.add_middleware(
 )
 # update the path here
 
-MODEL = # path to model
+MODEL = "../models/1"
 
 CLASSES_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
